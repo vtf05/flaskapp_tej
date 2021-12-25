@@ -18,7 +18,6 @@ def predict():
     int_features = []
     for x in request.form.values() :
         if  x :
-            print(type(x))
             int_features.append(float(x))
         else :
             int_features.append(0)    

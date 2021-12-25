@@ -1,84 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
- 
- 
+
+
 </head>
-<body bgcolor="cream">
-  <center>
-  <H1><font color="blue">WELCOME </font></H1>
-    <h1><font color="blue">STUDENT MARKS PREDICTION</font></h1>
 
-    
+<body style="
+    background-image: url( 'static/images/bg.jpeg ') ; background-size: 100rem 50rem;" ;>
+    <center>
+        <H1>
+            <font color="blue">WELCOME </font>
+        </H1>
+        <h1>
+            <font color="blue">STUDENT MARKS PREDICTION</font>
+        </h1>
 
-    <div class="row" >
-        <form action='/predict' method="post" class="col s12">
-          <div class="row">
-            <div class="input-field col s4">
-                <label for="first_name"><b>sem1</b></label>
+
+
+        <div class="row">
+            <form action='/predict' method="post" class="col s12">
+                <div class="row">
+                    <div class="input-field col s4">
+                        <label for="first_name"><b>sem1</b></label>
+                        <br>
+                        <input placeholder="sem1" name="sem1" id="first_name" type="text" class="validate">
+                    </div>
+                    <div class="input-field col s4">
+
+                        <label for="last_name"><b>sem2 </b></label>
+                        <br>
+                        <input id="last_name" name="sem2" placeholder="sem2 " type="text" class="validate">
+
+                    </div>
+
+                    <div class="input-field col s4">
+                        <label for="fname"><b>sem3</b></label>
+                        <br>
+                        <input id="_name" name="sem3" placeholder="sem3 " type="text" class="validate">
+
+                    </div>
+
+                    <div class="input-field col s4">
+                        <label for="mname"><b>sem4</b></label>
+                        <br>
+                        <input id="mname" name="sem4" placeholder="sem4 %" type="text" class="validate">
+
+                    </div>
+
+                    <div class="input-field col s4">
+                        <label for="lname"><b>sem5</b></label>
+                        <br>
+                        <input id="lname" name="sem5" placeholder="sem5 %" type="text" class="validate">
+
+                    </div>
+
+                </div>
                 <br>
-              <input placeholder="sem1" name="sem1" id="first_name" type="text" class="validate">
-            </div>
-            <div class="input-field col s4">
-    
-              <label for="last_name"><b>sem2 </b></label>
                 <br>
-              <input id="last_name" name="sem2" placeholder="sem2 "  type="text" class="validate">
-    
-            </div>
-    
-            <div class="input-field col s4">
-                <label for="fname"><b>sem3</b></label>
-                <br>
-              <input id="_name" name="sem3" placeholder="sem3 " type="text" class="validate">
-    
-            </div>
-    
-            <div class="input-field col s4">
-                <label for="mname"><b>sem4</b></label>
-                <br>
-              <input id="mname" name="sem4" placeholder="sem4 %" type="text" class="validate">
-    
-            </div>
-    
-            <div class="input-field col s4">
-                <label for="lname"><b>sem5</b></label>
-                <br>
-              <input id="lname" name="sem5" placeholder="sem5 %" type="text" class="validate">
-    
-            </div>
-    
-          </div>
-          <br>
-          <br>
-    
-          <div class="row center">
-    
-              <button type="submit" class="btn-large waves-effect waves-light orange">Predict 6th Sem Result</button>
-          </div>
-        </form>
-          </div>
-    
-          <br>
-            {{prediction_text}}<br>
-    
+
+                <div class="row center">
+
+                    <button type="submit" class="btn-large waves-effect waves-light orange">Predict 6th Sem Result</button>
+                </div>
+            </form>
         </div>
-      </div>
-    
-    
+
+        <br>
+        <div style="color: azure;">{{prediction_text}} </div>
+        <br>
+
+        </div>
+        </div>
+
+
         <br><br>
-      </div>
-      </div>>
-      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script src=".js/materialize.js"></script>
-      <script src="js/init.js"></script>
+        </div>
+        </div>>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src=".js/materialize.js"></script>
+        <script src="js/init.js"></script>
 
 
     </center>
-    
+
 </body>
+
 </html>
